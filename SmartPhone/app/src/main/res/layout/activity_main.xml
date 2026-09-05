@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Connection Control -->
+    <Button
+        android:id="@+id/btnConnectUsb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect USB" />
+
+    <TextView
+        android:id="@+id/tvConnStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Status: Disconnected"
+        android:textColor="#888888"
+        android:textStyle="bold" />
+
+    <!-- Real-time Sensor Displays -->
+    <TextView
+        android:id="@+id/tvAccelValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Accel: X: 0.00 | Y: 0.00 | Z: 0.00"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvGyroValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Gyro: X: 0.00 | Y: 0.00 | Z: 0.00"
+        android:textSize="15sp" />
+
+    <!-- Start/Stop Transmission Control -->
+    <Button
+        android:id="@+id/btnToggleStream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="32dp"
+        android:text="Start Sending" />
+
+</LinearLayout>
